@@ -66,7 +66,7 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
-
+config.hosts << "fd79b427be00445c9ee062eb9e8ccb6c.vfs.cloud9.ap-northeast-1.amazonaws.com"
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
