@@ -1,4 +1,11 @@
 $('.comment-textarea').val("");
+<!--、comment-textareaというクラス名を持つテキストエリアの値を空にするためのjQueryのコードです。-->
+
+ <!--// インスタンス変数は、book_commets_controllerのcreateアクションで定義されたものが使用できます。-->
+ <!--、book-comments-counterというクラス名を持つ要素のHTMLを更新するためのjQueryのコードです。-->
+ <!--render 'book_comments/counter', book: @bookは、book_comments/counterというビューファイルを呼び出し、-->
+ <!--@bookをローカル変数として渡しています。その結果、_counter.html.erbで定義されたHTMLコードが文字列として生成されます。-->
+ <!--その後、html()を使って、$('.book-comments-counter')という要素のHTMLを更新しています。-->
 $('.book-comments-counter').html("<%= j(render 'book_comments/counter', book: @book) %>");
 $('.book-comments-index').html("<%= j(render 'book_comments/index', book:  @book) %>");
 <!--$('.book-comments-form-<%#= @books.id %>').html("<%#= j(render 'book_comments/form', book: @books,book_comment: @book_comment) %>");-->
